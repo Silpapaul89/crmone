@@ -2,6 +2,11 @@ package testCases;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+
+import BaseTest.BaseClass;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 
 import java.io.FileInputStream;
@@ -35,7 +40,7 @@ import vtigerCrm.generic.WebDriverUtility.WebDriverUtility;
 public class CreateLeadTest extends BaseClass{
 
 
-	@Test
+	@Test(groups = "regressionTest")
 public void CreateLead() throws Throwable {
 	
 	//read testScript data from Excel file
@@ -47,21 +52,9 @@ public void CreateLead() throws Throwable {
 	String Email=elib.getTestDataFromExcelFile("email", 1, 6);
 	String Subject=elib.getTestDataFromExcelFile("email", 1, 7);
 	
-	//Workbook wb =WorkbookFactory.create(fis1);
-	//Sheet sh =wb.getSheet("email");
-	//Row row =sh.getRow(1);
-	
-	//String LastName= row.getCell(3).toString();
-	//String Company = row.getCell(4).toString();
-	//String Phone = row.getCell(5).toString();
-	//String Email = row.getCell(6).toString();
-	//String Subject = row.getCell(7).toString();
-
-
-	//step 1: login to app
-	//driver.findElement(By.name("user_name")).sendKeys(USERNAME);
-	//driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
-	//driver.findElement(By.id("submitButton")).click();
+	String lastName = elib.getTestDataFromExcelFile("Contact", 1, 2);
+	String email = elib.getTestDataFromExcelFile("Contact", 1, 4);
+	String phone = elib.getTestDataFromExcelFile("Contact", 1, 5);
 	
 	// step 2: navigate to lead module
 	HomePage hp=new HomePage(driver);
@@ -87,59 +80,36 @@ public void CreateLead() throws Throwable {
 	
 	hp.getEmailLink().click();
 	//driver.findElement(By.linkText("Email")).click();
-	EmailPage email= new EmailPage(driver);
-	email.getComposelink().click();
+	EmailPage ep= new EmailPage(driver);
+	ep.getComposelink().click();
 	//Thread.sleep(5000);
 	//driver.findElement(By.linkText("Compose")).click();
 	WebDriverUtility wlib= new WebDriverUtility();
 	
-
-	/*Set<String> set = driver.getWindowHandles();
-	System.out.println("size:"+set.size());
-	for(String handle:set) {
-		driver.switchTo().window(handle);
-		 String windowurl = driver.getCurrentUrl();
-		 System.out.println("driver:"+driver.getTitle());
-		 if(windowurl.contains("http://49.249.28.218:8888/index.php?module=Emails&action=EmailsAjax&file=EditView"))
-		 {
-			 break;
-		 }
-	}*/
 	wlib.switchToNewBrowserOnURL(driver,"http://49.249.28.218:8888/index.php?module=Emails&action=EmailsAjax&file=EditView");
-	//Set<String> set = driver.getWindowHandles();
-	//System.out.println("size:"+set.size());
-	//for(String handle:set) {
-		//driver.switchTo().window(handle);
-		 //String windowurl = driver.getCurrentUrl();
-		 //System.out.println("driver:"+driver.getTitle());
-		 //if(windowurl.contains("http://49.249.28.218:8888/index.php?module=Emails&action=EmailsAjax&file=EditView"))
-		 //{
-			 //break;
-		// }
-	//}
-	//module=Emails&action
-	email.getSelectleadIcon();
+
+	ep.getSelectleadIcon();
 
 	//WebElement ele= driver.findElement(By.xpath("//select[@name='parent_type']"));
 	Thread.sleep(5000);
 	//wlib.switchToNewBrowserOnURL(driver, "module=Emails&action");
-	wlib.selectFromDropDownText(email.getSelectleadIcon(),"Leads");
+	wlib.selectFromDropDownText(ep.getSelectleadIcon(),"Leads");
 	Thread.sleep(2000);
 	
-	email.getSelectplusIcon().click();
+	ep.getSelectplusIcon().click();
 
 	wlib.switchToNewBrowserOnURL(driver, "Leads&action");
-	email.getSearchBox().sendKeys(LastName);
-	email.getSearchNowBox().click();
+	ep.getSearchBox().sendKeys(LastName);
+	ep.getSearchNowBox().click();
 	Thread.sleep(2000);
 
     //driver.findElement(By.id("search_txt")).sendKeys(LastName);
-	email.getDynamicLink().click();
+	ep.getDynamicLink().click();
 	Thread.sleep(2000);
 	wlib.switchToNewBrowserOnURL(driver, "module=Emails&action=EmailsAjax&file=EditView");
-	email.getSubjectTextBox().sendKeys(Subject);
+	ep.getSubjectTextBox().sendKeys(Subject);
 
-	email.getSaveTextBox().click();
+	ep.getSaveTextBox().click();
 	
 	Thread.sleep(2000);
 	
@@ -147,6 +117,8 @@ public void CreateLead() throws Throwable {
 
 	LeadInfoPage lip= new LeadInfoPage(driver);
 	WebElement actualMsg = lip.getHeaderMsg();
+	
+	
 }
 }
 	

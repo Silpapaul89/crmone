@@ -1,41 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-31T21:35:02 IST" name="Default suite" finished-at="2025-03-31T21:35:34 IST" duration-ms="31883">
+  <suite started-at="2025-04-01T14:47:20 IST" name="Suite" finished-at="2025-04-01T14:50:29 IST" duration-ms="188639">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateLeadTest.CreateLead()[pri:0, instance:testCases.CreateLeadTest@5032714f]" name="CreateLead" class="testCases.CreateLeadTest"/>
+        <method signature="CreateOpportunityTest.CreateOpportunity()[pri:0, instance:testCases.CreateOpportunityTest@14028087]" name="CreateOpportunity" class="testCases.CreateOpportunityTest"/>
+        <method signature="ZypeLeadTest.CreateLead()[pri:0, instance:zypeCrmTest.ZypeLeadTest@6fa51cd4]" name="CreateLead" class="zypeCrmTest.ZypeLeadTest"/>
+      </group> <!-- regressionTest -->
     </groups>
-    <test started-at="2025-03-31T21:35:02 IST" name="Default test" finished-at="2025-03-31T21:35:34 IST" duration-ms="31883">
-      <class name="testCases.CreateLeadTest">
-        <test-method is-config="true" signature="configBs()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:02 IST" name="configBs" finished-at="2025-03-31T21:35:02 IST" duration-ms="87" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBs -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:02 IST" name="configBC" finished-at="2025-03-31T21:35:05 IST" duration-ms="3459" status="PASS">
+    <test started-at="2025-04-01T14:47:20 IST" name="Test" finished-at="2025-04-01T14:50:29 IST" duration-ms="188639">
+      <class name="zypeCrmTest.ZypeProductTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:zypeCrmTest.ZypeProductTest@2767e23c]" started-at="2025-04-01T14:48:12 IST" name="configBC" finished-at="2025-04-01T14:48:15 IST" duration-ms="2186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:05 IST" name="configBM" finished-at="2025-03-31T21:35:06 IST" duration-ms="1111" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:zypeCrmTest.ZypeProductTest@2767e23c]" started-at="2025-04-01T14:48:15 IST" name="configBM" finished-at="2025-04-01T14:48:17 IST" duration-ms="2091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="CreateLead()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:06 IST" name="CreateLead" finished-at="2025-03-31T21:35:33 IST" duration-ms="26221" status="PASS">
+        <test-method signature="CreateProductTest()[pri:0, instance:zypeCrmTest.ZypeProductTest@2767e23c]" started-at="2025-04-01T14:48:17 IST" name="CreateProductTest" finished-at="2025-04-01T14:48:58 IST" duration-ms="41323" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateLead -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:33 IST" name="configAM" finished-at="2025-03-31T21:35:33 IST" duration-ms="718" status="PASS">
+        </test-method> <!-- CreateProductTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:zypeCrmTest.ZypeProductTest@2767e23c]" started-at="2025-04-01T14:48:58 IST" name="configAM" finished-at="2025-04-01T14:48:59 IST" duration-ms="923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:33 IST" name="configAC" finished-at="2025-03-31T21:35:34 IST" duration-ms="304" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:zypeCrmTest.ZypeProductTest@2767e23c]" started-at="2025-04-01T14:48:59 IST" name="configAC" finished-at="2025-04-01T14:48:59 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:testCases.CreateLeadTest@298a5e20]" started-at="2025-03-31T21:35:34 IST" name="configAS" finished-at="2025-03-31T21:35:34 IST" duration-ms="0" status="PASS">
+      </class> <!-- zypeCrmTest.ZypeProductTest -->
+      <class name="zypeCrmTest.ZypeLeadTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:zypeCrmTest.ZypeLeadTest@6fa51cd4]" started-at="2025-04-01T14:47:30 IST" name="configBC" finished-at="2025-04-01T14:47:32 IST" duration-ms="2165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:zypeCrmTest.ZypeLeadTest@6fa51cd4]" started-at="2025-04-01T14:47:32 IST" name="configBM" finished-at="2025-04-01T14:47:34 IST" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateLead()[pri:0, instance:zypeCrmTest.ZypeLeadTest@6fa51cd4]" started-at="2025-04-01T14:47:34 IST" name="CreateLead" finished-at="2025-04-01T14:48:11 IST" duration-ms="37231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateLead -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:zypeCrmTest.ZypeLeadTest@6fa51cd4]" started-at="2025-04-01T14:48:11 IST" name="configAM" finished-at="2025-04-01T14:48:12 IST" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:zypeCrmTest.ZypeLeadTest@6fa51cd4]" started-at="2025-04-01T14:48:12 IST" name="configAC" finished-at="2025-04-01T14:48:12 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- zypeCrmTest.ZypeLeadTest -->
+      <class name="testCases.CreateVendorTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:testCases.CreateVendorTest@5386659f]" started-at="2025-04-01T14:49:35 IST" name="configBC" finished-at="2025-04-01T14:49:37 IST" duration-ms="2221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:testCases.CreateVendorTest@5386659f]" started-at="2025-04-01T14:49:37 IST" name="configBM" finished-at="2025-04-01T14:49:42 IST" duration-ms="5137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateVendor()[pri:0, instance:testCases.CreateVendorTest@5386659f]" started-at="2025-04-01T14:49:42 IST" name="CreateVendor" finished-at="2025-04-01T14:49:58 IST" duration-ms="15918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateVendor -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:testCases.CreateVendorTest@5386659f]" started-at="2025-04-01T14:49:58 IST" name="configAM" finished-at="2025-04-01T14:49:59 IST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:testCases.CreateVendorTest@5386659f]" started-at="2025-04-01T14:49:59 IST" name="configAC" finished-at="2025-04-01T14:49:59 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- testCases.CreateVendorTest -->
+      <class name="zypeCrmTest.ZypeContactTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:zypeCrmTest.ZypeContactTest@710c2b53]" started-at="2025-04-01T14:48:59 IST" name="configBC" finished-at="2025-04-01T14:49:01 IST" duration-ms="2203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:zypeCrmTest.ZypeContactTest@710c2b53]" started-at="2025-04-01T14:49:01 IST" name="configBM" finished-at="2025-04-01T14:49:03 IST" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateContactTest()[pri:0, instance:zypeCrmTest.ZypeContactTest@710c2b53]" started-at="2025-04-01T14:49:03 IST" name="CreateContactTest" finished-at="2025-04-01T14:49:34 IST" duration-ms="30967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:zypeCrmTest.ZypeContactTest@710c2b53]" started-at="2025-04-01T14:49:34 IST" name="configAM" finished-at="2025-04-01T14:49:35 IST" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:zypeCrmTest.ZypeContactTest@710c2b53]" started-at="2025-04-01T14:49:35 IST" name="configAC" finished-at="2025-04-01T14:49:35 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- zypeCrmTest.ZypeContactTest -->
+      <class name="testCases.CreateLeadTest">
+        <test-method is-config="true" signature="configBs()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:47:20 IST" name="configBs" finished-at="2025-04-01T14:47:20 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBs -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:47:20 IST" name="configBC" finished-at="2025-04-01T14:47:24 IST" duration-ms="3702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:47:24 IST" name="configBM" finished-at="2025-04-01T14:47:29 IST" duration-ms="4587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateLead()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:47:29 IST" name="CreateLead" finished-at="2025-04-01T14:47:29 IST" duration-ms="12" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
+at vtigerCrm.generic.listenerUtility.ListenerImp.onTestStart(ListenerImp.java:54)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:122)
+at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:647)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateLead -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:47:29 IST" name="configAM" finished-at="2025-04-01T14:47:30 IST" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:47:30 IST" name="configAC" finished-at="2025-04-01T14:47:30 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:testCases.CreateLeadTest@5032714f]" started-at="2025-04-01T14:50:29 IST" name="configAS" finished-at="2025-04-01T14:50:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
       </class> <!-- testCases.CreateLeadTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.CreateOpportunityTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:testCases.CreateOpportunityTest@14028087]" started-at="2025-04-01T14:49:59 IST" name="configBC" finished-at="2025-04-01T14:50:02 IST" duration-ms="2129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:testCases.CreateOpportunityTest@14028087]" started-at="2025-04-01T14:50:02 IST" name="configBM" finished-at="2025-04-01T14:50:03 IST" duration-ms="1199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateOpportunity()[pri:0, instance:testCases.CreateOpportunityTest@14028087]" started-at="2025-04-01T14:50:03 IST" name="CreateOpportunity" finished-at="2025-04-01T14:50:28 IST" duration-ms="24960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOpportunity -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:testCases.CreateOpportunityTest@14028087]" started-at="2025-04-01T14:50:28 IST" name="configAM" finished-at="2025-04-01T14:50:29 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:testCases.CreateOpportunityTest@14028087]" started-at="2025-04-01T14:50:29 IST" name="configAC" finished-at="2025-04-01T14:50:29 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- testCases.CreateOpportunityTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

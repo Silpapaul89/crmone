@@ -1,5 +1,12 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+
+import BaseTest.BaseClass;
+
+import org.testng.AssertJUnit;
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.Random;
@@ -24,7 +31,7 @@ import vtigerCrm.generic.WebDriverUtility.WebDriverUtility;
 
 public class CreateOpportunityTest extends BaseClass {
 
-	@Test
+	@Test(groups = "regressionTest")
 	public void CreateOpportunity() throws Throwable {
 
 		// read testScript data from Excel file

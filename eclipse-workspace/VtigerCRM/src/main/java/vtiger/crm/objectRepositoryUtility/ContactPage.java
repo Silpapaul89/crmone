@@ -15,13 +15,14 @@ public class ContactPage {
 	 }
 	 
 	 @FindBy(xpath="//img[@title='Create Contact...']")
-	 private WebElement contactlink;
+	 private WebElement createcontactlink;
+	 
+	public WebElement getCreatecontactlink() {
+		return createcontactlink;
+	}
 	 
 	
-	 
-	public WebElement getContactlink() {
-		return contactlink;
-	}
+
 
 
 }

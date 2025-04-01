@@ -9,6 +9,10 @@ import vtigerCrm.generic.WebDriverUtility.WebDriverUtility;
 
 public class createContactPage {
 
+	public WebElement getSaveBtn() {
+		return SaveBtn;
+	}
+
 	WebDriver driver;
 	WebDriverUtility wb = new WebDriverUtility();
 
@@ -16,32 +20,31 @@ public class createContactPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(name = "firstname")
 	private WebElement firstNameEdtBtn;
 
 	@FindBy(name = "lastname")
 	private WebElement LastNameEdtBtn;
-	
+
 	@FindBy(name = "phone")
 	private WebElement phoneNumberEdtBtn;
-	
+
 	@FindBy(name = "email")
 	private WebElement emailIdEdtBtn;
-	
+
 	@FindBy(xpath = "(//img[@src='themes/softed/images/select.gif'])[1]")
 	private WebElement selectOrgName;
-	
+
 	@FindBy(name = "search_text")
 	private WebElement searchTxtBox;
 
 	@FindBy(name = "search")
 	private WebElement searchnowTxtBox;
-	
+
 	@FindBy(id = "1")
 	private WebElement OrgNamelnkIcon;
-	
-	//(//input[@title='Save [Alt+S]'])[1]
+
 	@FindBy(xpath = "(//input[@title='Save [Alt+S]'])[1]")
 	private WebElement SaveBtn;
 

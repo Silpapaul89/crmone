@@ -19,14 +19,17 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import BaseTest.BaseClass;
+
 public class ListenerImp implements ITestListener, ISuiteListener
 {
 	public ExtentReports report;
 	public ExtentTest test;
-	
+	String time = new Date().toString().replace(" ", "").replace(":", "");
 	public void onStart(ISuite suite) {
 		System.out.println("Report configuration");
-		ExtentSparkReporter spark = new ExtentSparkReporter("./AdvanceReports/report.html");
+	
+		ExtentSparkReporter spark = new ExtentSparkReporter("./AdvanceReport/report_"+time+".html");
 		spark.config().setDocumentTitle("CRM Test Suite Result");
 		spark.config().setReportName("CRM Report");
 		spark.config().setTheme(Theme.STANDARD);
@@ -63,7 +66,7 @@ public class ListenerImp implements ITestListener, ISuiteListener
 		test.log(Status.FAIL, result.getMethod().getMethodName());
 		System.out.println("================"+testName+"======FAILED======");
 		TakesScreenshot TS = (TakesScreenshot) BaseClass.sdriver;
-		String time = new Date().toString().replace(" ", "").replace(":", "");
+		
 		File src = TS.getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(src, new File(".\\Screenshot\\"+testName+"_"+time+".png"));
